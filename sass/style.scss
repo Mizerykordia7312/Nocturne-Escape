@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'media';
+@import 'mobile';
 
 * {
 	box-sizing: border-box;
@@ -56,7 +57,7 @@ nav {
 			background-color: white;
 			position: absolute;
 			right: 20px;
-			top: 0;
+			top: 0px;
 		}
 
 		.navbar-collapse {

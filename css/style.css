@@ -68,6 +68,59 @@
     height: 20px;
   }
 }
+@media (max-width: 600px) {
+  .navbar .container .navbar-brand {
+    font-size: 16px;
+  }
+  .navbar .container .navbar-toggler {
+    position: absolute;
+    top: -2px;
+    scale: 0.8;
+  }
+  .home .hero-img .hero-text {
+    text-align: center;
+    z-index: 2;
+    color: white;
+  }
+  .home .hero-img .hero-text h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: "Nosifer", serif;
+    font-weight: 700;
+  }
+  .home .hero-img .hero-text span {
+    font-size: 22px;
+    font-family: "Nosifer", serif;
+  }
+  .rooms .container .card-group .card {
+    width: 95%;
+    margin: 25px auto;
+    border: none;
+    overflow: hidden;
+    background: none;
+  }
+  .rooms .container .card-group .card .card-body {
+    background: white;
+  }
+  .opinions .container-mobile .card-group .card {
+    height: 450px;
+    position: relative;
+  }
+  .opinions .container-mobile .card-group .card .note {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+  }
+  .opinions .container-mobile .card-group .card .mobile-img {
+    height: 50%;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .opinions .container-mobile .card-group .card:nth-child(3) .mobile-img {
+    -o-object-position: 30% 20%;
+       object-position: 30% 20%;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -121,7 +174,7 @@ nav .container button {
   background-color: white;
   position: absolute;
   right: 20px;
-  top: 0;
+  top: 0px;
 }
 nav .container .navbar-collapse .active {
   color: rgb(216, 40, 0);
