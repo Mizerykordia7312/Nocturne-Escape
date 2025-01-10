@@ -1,0 +1,476 @@
+@import 'colors';
+@import 'media';
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-padding-top: 70px;
+}
+
+body {
+	background-color: #180101;
+}
+
+span {
+	font-weight: 700;
+	font-family: 'Almendra', serif;
+	color: $main-color;
+}
+
+.shadow-bg {
+	background-color: rgb(0, 0, 0);
+}
+
+h4 {
+	text-align: center;
+	margin-bottom: 30px;
+	font-family: 'Almendra', serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $main-color;
+	font-size: 36px;
+}
+
+nav {
+	text-transform: uppercase;
+	z-index: 30;
+	background: none;
+
+	.container {
+		position: relative;
+
+		a {
+			color: white;
+			transition: color 0.5s;
+		}
+
+		a:hover {
+			color: $main-color;
+		}
+
+		button {
+			background-color: white;
+			position: absolute;
+			right: 20px;
+			top: 0;
+		}
+
+		.navbar-collapse {
+			.active {
+				color: rgb(216, 40, 0);
+			}
+		}
+
+		.dropdown {
+			a {
+				color: white;
+			}
+
+			a:visited {
+				color: white;
+			}
+
+			a:hover {
+				color: $main-color;
+			}
+		}
+
+		.dropdown-menu {
+			background: none;
+
+			a {
+				color: white;
+				transition: color 0.2s;
+			}
+
+			a:hover {
+				color: $main-color;
+				background: none;
+			}
+		}
+	}
+}
+
+.home {
+	.hero-img {
+		background-image: url('/img/backgrounds/hos1920.jpg');
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		height: 100vh;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero-img::after {
+		content: '';
+		background-color: rgba(0, 0, 0, 0.7);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.hero-text {
+		text-align: center;
+		z-index: 2;
+		color: white;
+
+		h2 {
+			text-transform: uppercase;
+			font-size: 52px;
+			font-family: 'Nosifer', serif;
+			font-weight: 700;
+		}
+
+		span {
+			font-size: 52px;
+			font-family: 'Nosifer', serif;
+		}
+	}
+}
+
+.info {
+	.info-box {
+		color: $main-color;
+		margin: 10px 0;
+		z-index: 3;
+		transition: color 0.5s;
+
+		i {
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+
+		h5 {
+			text-transform: uppercase;
+		}
+	}
+
+	.info-box:hover {
+		color: rgb(255, 253, 253);
+		cursor: pointer;
+	}
+}
+
+.aboutus {
+	background-image: url('/img/backgrounds/fantasy1920.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	position: relative;
+
+	h4 {
+		color: rgb(247, 169, 169);
+		position: relative;
+		z-index: 5;
+	}
+
+	.info-box {
+		color: rgb(247, 169, 169);
+		margin: 10px 0;
+		z-index: 4;
+		transition: color 1s;
+
+		i {
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+
+		h5 {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.aboutus::after {
+	content: '';
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	top: 0;
+}
+
+.rooms {
+	h4 {
+		color: $main-color;
+	}
+
+	.carousel {
+		position: relative;
+		img {
+			height: 600px;
+			object-fit: cover;
+			position: relative;
+		}
+
+		.carousel-item {
+			position: relative;
+		}
+
+		.carousel-item::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(22, 0, 0, 0.3);
+			z-index: 0;
+		}
+
+		.carousel-indicators {
+			position: absolute;
+			top: 92%;
+		}
+
+		.carousel-caption {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: 2;
+
+			h5 {
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.card-group {
+		.card {
+			margin: 10px;
+		}
+	}
+}
+
+.prices {
+	.price-box {
+		font-family: 'Cinzel', sans-serif;
+		background: linear-gradient(145deg, rgb(60, 5, 5), rgb(88, 5, 5));
+		margin: 15px 5px;
+		padding: 20px 25px;
+		border-radius: 10px;
+		transition: transform 0.3s, box-shadow 0.3s;
+		box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.3),
+			5px 5px 15px rgba(0, 0, 0, 0.8);
+
+		h3,
+		p,
+		span {
+			color: #f5f5f5;
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+		}
+
+		p {
+			font-size: 18px;
+			margin: 5px 0;
+		}
+
+		h3 {
+			margin-bottom: 20px;
+			font-size: 30px;
+			font-style: italic;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		span {
+			font-family: 'Cinzel', sans-serif;
+			font-weight: bold;
+			margin-right: 5px;
+		}
+
+		button {
+			background: rgba(255, 0, 0, 0.8);
+			color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background 0.3s, transform 0.2s;
+		}
+
+		button:hover {
+			background: rgba(255, 0, 0, 1);
+			transform: scale(1.1);
+		}
+
+		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 0 9px rgba(255, 0, 0, 0.7),
+				inset 0 0 9px rgba(255, 0, 0, 0.5);
+		}
+	}
+}
+
+.team {
+	.card-group {
+		.card {
+			margin: 0 10px;
+			border-radius: 12px;
+			transition: scale 0.3s;
+			border: none;
+			background: none;
+			overflow: hidden;
+
+			img {
+				height: 300px;
+				object-fit: cover;
+				object-position: top;
+			}
+
+			.card-body {
+				background-color: white;
+			}
+		}
+
+		.card:hover {
+			scale: 0.95;
+		}
+
+		.card-body {
+			height: 180px;
+		}
+	}
+}
+
+.opinions {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.card {
+			transition: scale 0.3s;
+			background: none;
+			border-radius: 12px;
+			overflow: hidden;
+
+			.row {
+				margin: 0 auto;
+				width: 900px;
+				background-color: white;
+			}
+
+			img {
+				height: 225px;
+				width: 250px;
+				object-fit: cover;
+			}
+
+			.card-body {
+				margin-left: -50px;
+				background: white;
+			}
+
+			.note {
+				margin-top: 30px;
+			}
+		}
+
+		.card:hover {
+			scale: 0.95;
+		}
+
+		.card-group {
+			.card {
+				margin: 15px 10px;
+				overflow: hidden;
+
+				.card-body {
+					margin-left: 0;
+				}
+
+				img {
+					height: 160px;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
+
+.contact {
+	background-image: url('/img/backgrounds/skull1920.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	padding: 60px 0;
+
+	h4 {
+		color: #fff;
+		font-size: 30px;
+		margin-bottom: 30px;
+		font-weight: bold;
+	}
+
+	.contact-box {
+		color: $main-color;
+		background-color: rgba(0, 0, 0, 0.6);
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+		margin-bottom: 20px;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+		&:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+		}
+
+		p {
+			font-size: 18px;
+			margin: 10px 0;
+			color: white;
+		}
+
+		p:first-of-type {
+			text-transform: uppercase;
+			font-size: 22px;
+			font-weight: bold;
+			color: white;
+
+			i {
+				font-size: 40px;
+				padding: 10px;
+				color: white;
+			}
+		}
+	}
+}
+
+.contact::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -1;
+}
+
+footer {
+	background-color: black;
+	padding: 10px;
+	position: relative;
+
+	p {
+		font-size: 22px;
+		color: white;
+		text-align: center;
+	}
+}
