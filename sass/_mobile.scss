@@ -1,10 +1,9 @@
 @media (max-width: 600px) {
 	.navbar {
 		.container {
-
-            .navbar-brand {
-                font-size: 16px;
-            }
+			.navbar-brand {
+				font-size: 16px;
+			}
 
 			.navbar-toggler {
 				position: absolute;
@@ -48,6 +47,24 @@
 					.card-body {
 						background: white;
 					}
+				}
+			}
+		}
+	}
+
+	.prices {
+		.container {
+			.title {
+				font-size: 20px;
+			}
+
+			.price-box {
+				p {
+					font-size: 16px;
+				}
+
+				button {
+					font-size: 14px;
 				}
 			}
 		}
