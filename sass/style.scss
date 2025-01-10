@@ -9,7 +9,7 @@
 }
 
 html {
-	scroll-padding-top: 70px;
+	scroll-padding-top: 55px;
 }
 
 body {
@@ -47,6 +47,10 @@ nav {
 		a {
 			color: white;
 			transition: color 0.5s;
+
+			.navbar-title {
+				color: #fff;
+			}
 		}
 
 		a:hover {
