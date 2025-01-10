@@ -102,15 +102,6 @@
   .rooms .container .card-group .card .card-body {
     background: white;
   }
-  .prices .container .title {
-    font-size: 18px;
-  }
-  .prices .container .price-box p {
-    font-size: 16px;
-  }
-  .prices .container .price-box button {
-    font-size: 14px;
-  }
   .opinions .container-mobile .card-group .card {
     height: 450px;
     position: relative;
@@ -128,6 +119,17 @@
   .opinions .container-mobile .card-group .card:nth-child(3) .mobile-img {
     -o-object-position: 30% 20%;
        object-position: 30% 20%;
+  }
+}
+@media (max-width: 400px) {
+  .prices .container .title {
+    font-size: 15px;
+  }
+  .prices .container .price-box p {
+    font-size: 13px;
+  }
+  .prices .container .price-box button {
+    font-size: 11px;
   }
 }
 * {
