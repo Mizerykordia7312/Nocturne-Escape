@@ -7,6 +7,11 @@ This project is one of my first. It showcases a website designed to encourage vi
 I aimed to keep the website in a dark theme with a touch of humor.
 
 ## Features
+
 - Responsive layout
 - Styled with Sass for modular and maintainable CSS
 - Interactive elements enhanced with JavaScript
+
+## Live Demo
+
+[https://mizerykordia7312.github.io/Nocturne-Escape/]
