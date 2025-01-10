@@ -108,7 +108,7 @@
   }
   .opinions .container-mobile .card-group .card .note {
     position: absolute;
-    bottom: 10px;
+    bottom: -5px;
     right: 15px;
   }
   .opinions .container-mobile .card-group .card .mobile-img {
