@@ -10,6 +10,10 @@
 				top: -2px;
 				scale: 0.8;
 			}
+
+			.nav-link {
+				font-size: 11px;
+			}
 		}
 	}
 
@@ -95,6 +99,16 @@
 
 				button {
 					font-size: 11px;
+				}
+			}
+		}
+	}
+
+	.team {
+		.card-group {
+			.card {
+				.card-body {
+					height: 200px;
 				}
 			}
 		}

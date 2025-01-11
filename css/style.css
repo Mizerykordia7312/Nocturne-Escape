@@ -77,6 +77,9 @@
     top: -2px;
     scale: 0.8;
   }
+  .navbar .container .nav-link {
+    font-size: 11px;
+  }
   .home .hero-img .hero-text {
     text-align: center;
     z-index: 2;
@@ -130,6 +133,9 @@
   }
   .prices .container .price-box button {
     font-size: 11px;
+  }
+  .team .card-group .card .card-body {
+    height: 200px;
   }
 }
 * {
