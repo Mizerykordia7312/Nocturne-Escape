@@ -123,6 +123,16 @@
     -o-object-position: 30% 20%;
        object-position: 30% 20%;
   }
+  .contact .title {
+    font-size: 20px;
+  }
+  .contact .container .contact-text {
+    font-size: 13px;
+  }
+  footer .footer-text {
+    font-size: 12px;
+    margin-top: 6px;
+  }
 }
 @media (max-width: 400px) {
   .prices .container .title {
