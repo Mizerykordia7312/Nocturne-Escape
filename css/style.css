@@ -135,7 +135,10 @@
     font-size: 11px;
   }
   .team .card-group .card .card-body {
-    height: 200px;
+    height: 220px;
+  }
+  .opinions .container-mobile .card-text {
+    font-size: 15px;
   }
 }
 * {
